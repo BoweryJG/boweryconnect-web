@@ -10,9 +10,9 @@ import ContactPage from './pages/ContactPage';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1E3A8A', // Deep blue - trust and stability
-      light: '#3B82F6',
-      dark: '#1E40AF',
+      main: '#2563EB', // Softer blue - trust and calm
+      light: '#60A5FA',
+      dark: '#1D4ED8',
     },
     secondary: {
       main: '#F59E0B', // Warm amber - hope and opportunity

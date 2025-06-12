@@ -52,12 +52,17 @@ export default function Navbar() {
             component={Link}
             to="/"
             sx={{
-              fontWeight: 700,
+              fontWeight: 500,
               color: theme.palette.primary.main,
               textDecoration: 'none',
               display: 'flex',
               alignItems: 'center',
               gap: 1,
+              transition: 'color 0.3s ease',
+              '&:hover': {
+                color: theme.palette.primary.light,
+              },
+              letterSpacing: '0.5px',
             }}
           >
             BoweryConnect

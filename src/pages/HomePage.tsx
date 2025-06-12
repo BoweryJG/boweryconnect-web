@@ -89,12 +89,29 @@ export default function HomePage() {
                 sx={{
                   fontSize: { xs: '2.5rem', md: '3.5rem' },
                   mb: 3,
-                  fontWeight: 800,
+                  fontWeight: 600,
+                  opacity: 0,
+                  animation: 'fadeIn 1.2s ease-out 0.3s forwards',
+                  '@keyframes fadeIn': {
+                    '0%': { opacity: 0, transform: 'translateY(10px)' },
+                    '100%': { opacity: 1, transform: 'translateY(0)' },
+                  },
                 }}
               >
                 Your Path to Meaningful Employment
               </Typography>
-              <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
+              <Typography 
+                variant="h5" 
+                sx={{ 
+                  mb: 4, 
+                  opacity: 0,
+                  animation: 'fadeIn 1.2s ease-out 0.6s forwards',
+                  '@keyframes fadeIn': {
+                    '0%': { opacity: 0, transform: 'translateY(10px)' },
+                    '100%': { opacity: 0.9, transform: 'translateY(0)' },
+                  },
+                }}
+              >
                 BoweryConnect bridges the gap between those experiencing homelessness 
                 and employers who believe in second chances.
               </Typography>
@@ -226,9 +243,10 @@ export default function HomePage() {
                 <Card
                   sx={{
                     height: '100%',
-                    transition: 'transform 0.3s',
+                    transition: 'box-shadow 0.3s ease, opacity 0.3s ease',
                     '&:hover': {
-                      transform: 'translateY(-4px)',
+                      boxShadow: '0 8px 25px rgba(30, 58, 138, 0.08)',
+                      opacity: 0.95,
                     },
                   }}
                   elevation={0}
